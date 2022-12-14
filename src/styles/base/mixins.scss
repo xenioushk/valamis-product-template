@@ -9,10 +9,11 @@
 }
 
 @mixin drop-shadow($x: 0, $y: 0, $blur: 5px, $spread: 0, $alpha: 0.16) {
-  // -webkit-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
-  // -moz-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
+  -webkit-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
+  -moz-box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
   // box-shadow: $x $y $blur $spread rgba(0, 0, 0, $alpha);
-  box-shadow: $x $y $blur $spread $alpha;
+  box-shadow: $x $y $blur $spread rgba(54, 114, 216, $alpha);
+  // box-shadow: $x $y $blur $spread $alpha;
 }
 
 @mixin inner-shadow($x: 0, $y: 0, $blur: 5px, $spread: 0, $alpha: 0.2) {

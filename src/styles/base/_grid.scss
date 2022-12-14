@@ -6,8 +6,6 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem; // shorthand
   align-items: baseline;
-  // column-gap: 10px;
-  // row-gap: 10px;
 
   &--products {
     grid-template-columns: repeat(1, 1fr);
@@ -23,7 +21,7 @@
 }
 
 // Tablet.
-@media (min-width: 40rem) {
+@media (min-width: 576px) {
   .container {
     &--products {
       grid-template-columns: repeat(2, 1fr);
@@ -31,8 +29,17 @@
   }
 }
 
+// Tablet Horizontal screen
+@media (min-width: 768px) {
+  .container {
+    &--products {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
 // Large screen
-@media (min-width: 56rem) {
+@media (min-width: 1200px) {
   .container {
     &--products {
       grid-template-columns: repeat(4, 1fr);
