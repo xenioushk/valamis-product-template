@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const HtmlWebpackHarddiskPlugin = require("html-webpack-harddisk-plugin")
 const Pages = require("./webpack.pages")
 const configuration = {
-  port: 3000, // this is browserSync Port
+  port: 3001, // this is browserSync Port
   TemplateTitle: "Product Template",
 }
 
