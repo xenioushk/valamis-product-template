@@ -1,0 +1,30 @@
+/***********************************************************************************************/
+/* 11. 404 PAGE */
+/***********************************************************************************************/
+
+.section-404 {
+  background: $second-bg-color;
+}
+
+.message-container-404 {
+  margin: 48px 0;
+
+  .text-404 {
+    font-size: 180px;
+    line-height: 200px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-family: $heading-font-alt;
+    color: $primary-color;
+
+    span {
+      color: darken($primary-color, 10%);
+    }
+  }
+
+  .message-text-404 {
+    font-size: 32px;
+    line-height: 42px;
+    display: block;
+  }
+}

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Grid Templating Boilerplate">
+    <meta name="author" content="Mahbub Alam Khan">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon.png">
+
+  </head>
+
+
+  <body>
+
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1 class="logo__title">
+              Product
+            </h1>
+            <span class="logo__subtitle">We provide the best quality fro clients like you.</span>
+          </div>
+          <ul class="header_nav">
+            <li>
+              <a href="#">All</a>
+            </li>
+            <li>
+              <a href="#">Sofa</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav--active">Chair</a>
+            </li>
+            <li>
+              <a href="#">Table</a>
+            </li>
+            <li>
+              <a href="#">Lamp</a>
+            </li>
+            <li>
+              <a href="#">Mirrors</a>
+            </li>
+          </ul>
+          <box-icon name='menu' size="sm" class="menu"></box-icon>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Products -->
+
+    <section class="products">
+
+      <div
+        class="container container--products">
+
+        <!-- Product Loveable Chair -->
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Loveable Chair</h2>
+            <p class="product-card__description">Cabriole shield back chair with scroll arm supports</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--yellow"></span>
+                <span class="product-color__circle product-color--dark_gray"></span>
+                <span class="product-color__circle product-color--brown"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                51,04
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product White Comfy -->
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/chair.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">White Comfy</h2>
+            <p class="product-card__description">Exquisite gently curving lines with wood tipped legs</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--turquoise"></span>
+                <span class="product-color__circle product-color--black"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                54,83
+              </div>
+            </div>
+
+            <a class="btn btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Elegencies -->
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Elegencies</h2>
+            <p class="product-card__description">Back dining chair designed for exceptional style and comfort</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--light_brown"></span>
+                <span class="product-color__circle product-color--black"></span>
+                <span class="product-color__circle product-color--brown"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                34,76
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+
+        <!-- Product Four -->
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Moderniste</h2>
+            <p class="product-card__description">Handsome and purposeful with imposing high-back chair</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--yellow"></span>
+                <span class="product-color__circle product-color--dark_gray"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                31,22
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Five -->
+
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Brownie</h2>
+            <p class="product-card__description">Gorgeuos camel brown calm chair and fabulous</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--brown"></span>
+                <span class="product-color__circle product-color--dark_gray"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                31,11
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Lavenderia -->
+
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Lavenderia</h2>
+            <p class="product-card__description">Cabriole shield back chair with scroll arm supports</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--yellow"></span>
+                <span class="product-color__circle product-color--dark_gray"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                29,98
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Pinky Swear -->
+
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Pinky Swear</h2>
+            <p class="product-card__description">The gentle feminine curves of the back flow seamlessly</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--pink"></span>
+                <span class="product-color__circle product-color--dark_gray"></span>
+                <span class="product-color__circle product-color--turquoise"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                50,81
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+        <!-- Product Emmanulle -->
+
+        <div class="product-card">
+          <img class="product-card__featured_image" src="images/default.png" alt="product-image">
+          <div class="product-card__info">
+            <h2 class="product-card__title">Emmanulle</h2>
+            <p class="product-card__description">Featuring deep-sprung base and cushion squared styling</p>
+            <div class="product-card__price_color">
+
+              <div class="product-color">
+                <span class="product-color__circle product-color--dark_gray"></span>
+                <span class="product-color__circle product-color--black"></span>
+                <span class="product-color__circle product-color--brown"></span>
+              </div>
+
+              <div class="product-price">
+                <sup class="product-price__currency">$</sup>
+                64,06
+              </div>
+            </div>
+
+            <a class="btn btn--block btn--product-card" href="#">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- end container-->
+
+    </section>
+
+
+  </body>
+
+</html>

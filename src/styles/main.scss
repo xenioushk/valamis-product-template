@@ -1,0 +1,39 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import "./base/variables.scss";
+@import "./base/mixins.scss";
+@import "./base/reset.scss";
+// @import "./modules/layout.scss";
+
+@import "./base/global";
+@import "./base/utility";
+
+// Page Elements.
+
+@import "./modules/header";
+@import "./modules/footer";
+@import "./modules/products";
+
+// Flex Box.
+
+@import "./base/flexbox";
+@import "./base/grid";
+
+// Blocks
+// @import "./modules/blocks/testimonial";
+// @import "./modules/blocks/appointment_form";
+// Pages
+// @import "./modules/pages/service";
+// @import "./modules/pages/coming_soon";
+// @import "./modules/pages/contact";
+// @import "./modules/pages/faq";
+// @import "./modules/pages/gallery";
+// @import "./modules/pages/404";
+// Others.
+// @import "./modules/footer";
+// @import "./modules/wp_sidebar";
+// @import "./modules/wp_support";
+@import "./modules/responsive";
+// rem to px
+// 1 rem = 16px;
+// 1.5 rem = 24px;

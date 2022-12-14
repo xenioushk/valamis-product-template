@@ -1,0 +1,313 @@
+/*----- SECTION APPOINTMENT ----*/
+
+.appointment-form-wrapper {
+  background: $pure-white-bg;
+  padding: 0px 0px 28px;
+  margin-bottom: 0px;
+  border: 1px solid lighten($light-border-color, 15%);
+  @include drop-shadow(0px, 0px, 25px, 10px, 0.05);
+
+  .appointment-form-heading {
+    position: relative;
+    background: $secondary-color;
+    padding: 30px;
+    margin: -1px -1px 48px -1px;
+
+    .form-title {
+      position: relative;
+      clear: both;
+      overflow: hidden;
+      font-size: 24px;
+      font-weight: 600;
+      color: $light-text-color;
+      letter-spacing: 0em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .appoinment-form {
+    padding: 0 12px;
+
+    .form-control {
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 0;
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 12px;
+        right: 32px;
+        font-size: 17px;
+        color: darken($light-text-color, 10%);
+        transition: all 0.5s ease 0s;
+      }
+    }
+
+    .form-control::-moz-placeholder {
+      color: lighten($text-color, 25%);
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"] {
+      color: lighten($text-color, 25%);
+      border: 1px solid darken($light-border-color, 75%);
+      line-height: 42px;
+      padding-right: 32px;
+      height: 42px;
+      margin-bottom: 24px;
+      @include round(0);
+      @include drop-shadow(0, 0, 0, 0);
+      @include inner-shadow(0, 0, 0, 0);
+      @include transition(0.3s);
+
+      &:focus {
+        border: 1px solid $light-border-color;
+        @include drop-shadow(0, 0, 0, 0);
+        @include inner-shadow(0, 0, 0, 0);
+      }
+    }
+
+    textarea {
+      color: lighten($text-color, 25%);
+      border: 0px;
+      border: 1px solid darken($light-border-color, 75%);
+      padding-left: 2px;
+      margin-bottom: 24px;
+      padding: 6px 12px;
+      @include round(0);
+      @include drop-shadow(0, 0, 0, 0);
+      @include inner-shadow(0, 0, 0, 0);
+      @include transition(0.3s);
+      &:focus {
+        @include drop-shadow(0, 0, 0, 0);
+        @include inner-shadow(0, 0, 0, 0);
+        border: 1px solid $light-border-color;
+      }
+    }
+
+    select {
+      border: 0px;
+      border: 1px solid darken($light-border-color, 75%);
+      padding-left: 2px;
+      margin-bottom: 24px;
+      padding: 6px 12px;
+      @include round(0);
+      @include drop-shadow(0, 0, 0, 0);
+      @include inner-shadow(0, 0, 0, 0);
+      @include transition(0.3s);
+      &:focus {
+        @include drop-shadow(0, 0, 0, 0);
+        @include inner-shadow(0, 0, 0, 0);
+        border: 1px solid $light-border-color;
+      }
+    }
+
+    .select-style {
+      position: relative;
+
+      select.form-control {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        background-image: url("../images/down_arrow.png");
+        background-position: 100% 4px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-shadow: none;
+        color: lighten($text-color, 25%);
+        padding: 6px 12px;
+        height: 42px;
+        line-height: 32px;
+        margin-bottom: 24px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  /*----- LIGHT LAYOUT OF APPOINTMENT FORM ----*/
+
+  &.light-layout {
+    .appointment-form-heading {
+      background: transparent;
+      padding: 42px 24px 0 24px;
+      position: relative;
+      margin: -1px -1px 48px -1px;
+
+      .form-title + p {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .form-title {
+        position: relative;
+        clear: both;
+        font-size: 32px;
+        font-weight: 600;
+        color: $default-font-color;
+        letter-spacing: 0em;
+        margin: 0 0 0px 0;
+        padding-bottom: 32px;
+
+        &:after {
+          width: 60px;
+          height: 5px;
+          position: absolute;
+          content: "";
+          left: 50%;
+          top: 60px;
+          margin-left: -30px;
+          background: $primary-color;
+        }
+      }
+
+      /*----- For Left Alignmnent ----*/
+
+      &.text-left {
+        clear: both;
+
+        .form-title {
+          &:after {
+            left: 0;
+            margin-left: 0px;
+            background: $primary-color;
+          }
+        }
+      }
+    }
+
+    .appoinment-form {
+      padding: 0 12px;
+
+      .form-control {
+        font-size: 13px;
+      }
+
+      .form-group {
+        margin-bottom: 0;
+        position: relative;
+
+        label {
+          font-weight: 600;
+          margin-bottom: 6px;
+          margin-top: 0;
+        }
+
+        i {
+          position: absolute;
+          top: 44px;
+          right: 26px;
+          font-size: 16px;
+          color: darken($light-text-color, 20%);
+          transition: all 0.5s ease 0s;
+        }
+      }
+
+      .form-control::-moz-placeholder {
+        color: lighten($text-color, 25%);
+        font-size: 14px;
+      }
+
+      input,
+      textarea,
+      select{
+        background: darken($light-bg, 1%);
+        color: lighten($text-color, 5%);
+        border: 1px solid darken($light-border-color, 10%);
+        &:focus {
+          border: 1px solid darken($light-border-color, 25%);
+        }
+      }
+
+
+      input[type="text"],
+      input[type="email"],
+      input[type="url"],
+      input[type="password"] {
+        line-height: 42px;
+        padding-right: 32px;
+        height: 42px;
+        margin-bottom: 24px;
+        @include round(0px);
+        @include drop-shadow(0, 0, 0, 0);
+        @include inner-shadow(0, 0, 0, 0);
+        @include transition(0.3s);
+
+        &:focus {
+          @include drop-shadow(0, 0, 0, 0);
+          @include inner-shadow(0, 0, 0, 0);
+        }
+      }
+
+      textarea {
+        padding-left: 2px;
+        margin-bottom: 24px;
+        padding: 6px 12px;
+        @include round(0);
+        @include drop-shadow(0, 0, 0, 0);
+        @include inner-shadow(0, 0, 0, 0);
+        @include transition(0.3s);
+        &:focus {
+          @include drop-shadow(0, 0, 0, 0);
+          @include inner-shadow(0, 0, 0, 0);
+        }
+      }
+
+      select {
+        padding-left: 2px;
+        margin-bottom: 24px;
+        padding: 6px 12px;
+        @include round(0);
+        @include drop-shadow(0, 0, 0, 0);
+        @include inner-shadow(0, 0, 0, 0);
+        @include transition(0.3s);
+        &:focus {
+          @include drop-shadow(0, 0, 0, 0);
+          @include inner-shadow(0, 0, 0, 0);
+        }
+      }
+
+      .select-style {
+        position: relative;
+
+        select.form-control {
+          border: 1px solid darken($light-border-color, 5%);
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          position: relative;
+          background-image: url("../images/down_arrow.png");
+          background-position: 100% 4px;
+          background-repeat: no-repeat;
+          background-color: #f5f5f5;
+          cursor: pointer;
+          box-shadow: none;
+          color: lighten($text-color, 25%);
+          padding: 0px 12px;
+          height: 42px;
+          line-height: 32px;
+          margin-bottom: 24px;
+          font-size: 14px;
+        }
+      }
+
+      .error {
+        position: relative;
+        top: -16px;
+        font-style: italic;
+        color: tomato;
+      }
+    }
+  }
+}
+
+.appoinment-person {
+  position: relative;
+  top: 8px;
+}

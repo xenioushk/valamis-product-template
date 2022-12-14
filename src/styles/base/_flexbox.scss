@@ -1,0 +1,75 @@
+.flex-container {
+  display: flex;
+  background: lightgray;
+  height: 300px;
+  // flex-wrap: wrap; // fix responsive issue.
+
+  // Alignment content horizontally.
+  justify-content: start;
+  // justify-content: center;
+  // justify-content: end;
+  // justify-content: space-around;
+  // justify-content: space-between;
+  // justify-content: space-evenly;
+
+  // Alignment content verically.
+  align-items: center;
+  // align-items: baseline; // or use flex-start
+  // align-items: flex-end; // or use flex-end
+
+  .item {
+    // flex-basis: 200px;
+    // flex-grow: 1;
+    // shorthand
+    // flex: 1 0 0; // flex grow, flex shrink, flex basis
+    flex: 1; // flex grow, flex shrink, flex basis
+    // width: 100px;
+    height: 100px;
+    background: tomato;
+    color: #fff;
+    margin: 10px;
+
+    // Set the item centered.
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item:nth-of-type(1) {
+    // align-self: center;
+    // order: 3; // odering item.
+    // flex-grow: 2;
+  }
+
+  .item:nth-of-type(2) {
+    // align-self: baseline;
+    // order: 1;
+    // flex-grow: 1;
+  }
+
+  .item:nth-of-type(3) {
+    // align-self: flex-end;
+    // flex-grow: 4;
+    // flex-shrink: 2;
+  }
+}
+
+//
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column; // row(default), row-reverse, column-reverse
+  justify-content: space-around;
+  // align-items: flex-end;
+  .item {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    color: #fff;
+    margin: 10px;
+  }
+
+  .item:nth-of-type(2) {
+    align-self: flex-end;
+  }
+}

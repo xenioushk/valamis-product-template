@@ -1,0 +1,39 @@
+/***********************************************************************************************/
+/* SERVICE PAGE */
+/***********************************************************************************************/
+
+.service-bottom-layout {
+  margin-top: 30px;
+}
+
+.single-service-content {
+  h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+    li {
+      padding-left: 32px;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block;
+        color: $primary-color;
+        margin: 0 11px 0 0;
+        position: absolute;
+        left: 0px;
+      }
+    }
+  }
+}

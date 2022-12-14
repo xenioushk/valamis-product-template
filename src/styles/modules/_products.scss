@@ -1,0 +1,135 @@
+.product-card {
+  position: relative;
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  justify-content: center;
+  color: $dark-text-color;
+  padding-top: 120px;
+  margin-bottom: 100px;
+
+  &__featured_image {
+    top: 0;
+    left: 15%;
+    position: absolute;
+    width: 70%;
+    margin-top: -5%;
+    @include round(8px);
+  }
+
+  &__info {
+    border: 2px solid transparent;
+    background-color: darken($light-bg, 3%);
+    @include round(8px);
+    padding: 3.5rem 18px 1rem 18px;
+    flex-direction: column;
+    // border-width: 2px;
+    // border-style: solid;
+    // border-image: linear-gradient(to top, red, rgba(0, 0, 0, 0)) 1 100%;
+    // @include drop-shadow(0, 3px, 0px, 1px, rgba(0, 0, 0, 0.6));
+
+    // border-inline-start: 2px solid;
+    // border-block-start: 2px solid;
+    // border-image-slice: 1;
+    // border-image-source: radial-gradient(circle at right, lightblue, transparent 100%);
+
+    // border: double 3px transparent;
+    // border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top, lightblue, pink 70%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    &:hover {
+      // border-image: linear-gradient(to top, blue, rgba(0, 0, 0, 0)) 1 100%;
+
+      .btn--product-card {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    margin: 2.5rem 0 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  &__description {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 1.4rem;
+  }
+
+  &__price_color {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
+
+// Product color is a element
+.product-color {
+  border-radius: 100%;
+  display: flex;
+
+  &__circle {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border-radius: 100%;
+    background: #000000;
+    margin-right: 8px;
+  }
+
+  &--black {
+    background: #000000;
+  }
+
+  &--brown {
+    background: #745252;
+  }
+
+  &--dark_gray {
+    background: #5b626c;
+  }
+
+  &--green {
+    background: green;
+  }
+
+  &--light_brown {
+    background: #d1ccc0;
+  }
+
+  &--pink {
+    background: #eec0b8;
+  }
+
+  &--turquoise {
+    background: #5eaeb2;
+  }
+
+  &--yellow {
+    background: #e0b84d;
+  }
+}
+
+// Product Currency.
+
+.product-price {
+  letter-spacing: 0.02rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  position: relative;
+  padding-left: 16px;
+  &__currency {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    text-align: center;
+  }
+}

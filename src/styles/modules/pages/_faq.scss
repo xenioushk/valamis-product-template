@@ -1,0 +1,79 @@
+/***********************************************************************************************/
+/*  FAQ PAGE */
+/***********************************************************************************************/
+
+.faq-layout {
+  position: relative;
+  overflow: hidden;
+
+  .panel {
+    box-shadow: none;
+  }
+
+  .panel-default {
+    position: relative;
+    border: 0px solid $border-color;
+    padding: 17px 16px 0;
+    background: darken($light-bg, 1%);
+    border-radius: 0;
+  }
+
+  .faq-box {
+    .panel-heading {
+      background: none;
+      border: 0 none;
+      display: block;
+      padding: 16px;
+      margin: -16px -15px;
+      background: $dark-bg;
+      color: $light-text-color;
+      @include transition(all, 0.5s);
+      @include round(0px);
+
+      &:hover {
+        background: $primary-color;
+      }
+    }
+
+    .panel-title {
+      display: block;
+      letter-spacing: 0.03em;
+      margin-bottom: 14px;
+      margin-top: 0;
+      font-size: inherit;
+      text-transform: capitalize;
+      color: $light-text-color;
+    }
+    .panel-title > a {
+      line-height: 24px;
+      display: block;
+      color: $light-text-color;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        color: $light-text-color;
+      }
+    }
+
+    .panel-body {
+      padding-top: 32px;
+      padding-left: 0px;
+      padding-bottom: 18px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0d8";
+      float: left;
+      color: $light-text-color;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+      content: "\f0d7";
+    }
+  }
+}

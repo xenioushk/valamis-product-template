@@ -1,0 +1,109 @@
+/***********************************************************************************************/
+/* Widget Link Color */
+/***********************************************************************************************/
+
+.sidebar-widget {
+  a {
+    color: $text-color;
+    @include transition(0.3s);
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+/***********************************************************************************************/
+/* CALENDAR WIDGET */
+/***********************************************************************************************/
+
+#calendar_wrap {
+  margin: 0 auto 5px auto;
+
+  #wp-calendar {
+    width: 100%;
+
+    border: 1px solid $light-border-color;
+    padding: 2px;
+
+    caption {
+      border-color: $light-border-color;
+      border-image: none;
+      border-style: solid solid none;
+      border-width: 1px 1px medium;
+      font-weight: bold;
+      padding: 10px 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    thead {
+      border-right: 1px solid $light-border-color;
+    }
+
+    thead th {
+      border-right: 1px solid $light-border-color;
+    }
+
+    th {
+      background: none repeat scroll 0 0 #f9f9f9;
+      border-bottom: 1px solid $light-border-color;
+      border-right: 1px solid $light-border-color;
+    }
+    tr th,
+    thead th {
+      font-weight: bold;
+      padding: 9px 0;
+      text-align: center;
+    }
+
+    tbody {
+      color: #aaa;
+
+      tr td {
+        border-bottom: 1px solid $light-border-color;
+        border-right: 1px solid $light-border-color;
+        padding: 6px;
+        text-align: center;
+        background: #f5f5f5;
+        @include round(0px);
+        text-align: center;
+        @include transition(0.3s);
+
+        &:hover {
+          background: $light-bg;
+        }
+      }
+
+      .pad {
+        background: none;
+      }
+    }
+
+    tfoot {
+      tr td {
+        border-bottom: 1px solid $light-border-color;
+        border-right: 1px solid $light-border-color;
+        padding: 6px;
+        text-align: center;
+      }
+
+      #next {
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      #prev {
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+    }
+
+    #today {
+      background-color: $primary-color;
+      color: $light-text-color;
+      font-weight: bold;
+    }
+  }
+}
