@@ -37,6 +37,19 @@ section {
       display: block;
     }
   }
+
+  // Product Show more button.
+
+  &--show-more {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background: transparent;
+      color: darken($primary-color, 30%);
+    }
+  }
 }
 
 // Responsive
