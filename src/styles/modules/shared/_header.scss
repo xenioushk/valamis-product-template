@@ -18,12 +18,15 @@ header {
     font-size: 0.75rem;
     margin: 0;
     color: $default-font-color;
+    opacity: 0.7;
+    padding-right: 24px; // it's prevent the text overflow with the menu.
   }
 }
 
 // Nav
 
 nav {
+  display: flex;
   flex-direction: column;
   position: relative;
 }
@@ -71,7 +74,7 @@ box-icon {
   position: absolute;
   width: 100%;
   z-index: 1;
-  top: 70px;
+  top: 80px;
   left: 0;
 }
 
@@ -89,7 +92,7 @@ box-icon {
 
 // Responsive
 
-@media (min-width: 40rem) {
+@media (min-width: 576px) {
   box-icon {
     display: block;
   }
@@ -100,26 +103,24 @@ box-icon {
 }
 
 // Large screen
-@media (min-width: 56rem) {
+@media (min-width: 1200px) {
   .logo {
     color: $dark-text-color;
 
     &__title {
       font-size: 2.2rem;
       font-weight: 700;
-      margin-bottom: 1rem;
     }
 
     &__subtitle {
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: $default-font-color;
     }
   }
 
   nav {
     padding: 0;
-    margin: 1.5rem 0 0 0;
-    display: flex;
+    margin: 1.5rem 0 2rem 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

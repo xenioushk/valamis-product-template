@@ -3,6 +3,7 @@ class Products {
   constructor() {
     this.showMoreProductsBtn = document.getElementById("show_more_products")
     this.productCard = document.querySelector(".product-card")
+    this.productCards = document.querySelectorAll(".product-card")
     this.productContainer = document.querySelector(".container--products")
 
     if (this.showMoreProductsBtn.length == false) {
@@ -20,7 +21,12 @@ class Products {
   //3.Actions.
   showMoreProducts(e) {
     e.preventDefault()
-    this.productContainer.appendChild(this.productCard.cloneNode(true))
+    var $this = this
+    var productCards = this.productCards
+
+    ;[...productCards].slice(0, 4).forEach((item) => {
+      $this.productContainer.appendChild(item.cloneNode(true))
+    })
   }
 }
 
