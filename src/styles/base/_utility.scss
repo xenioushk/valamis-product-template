@@ -1,7 +1,7 @@
 // Section.
 
 section {
-  padding: 60px 0;
+  padding: 24px 0;
 }
 
 // Button
@@ -33,6 +33,7 @@ section {
     margin-top: 1.8rem;
     display: none;
 
+    // @include transition(all, 0.2s);
     &:hover {
       display: block;
     }
@@ -54,8 +55,15 @@ section {
 
 // Responsive
 
-@media only screen and (max-width: 479px) {
+@media (min-width: 40rem) {
   section {
-    padding: 24px 0;
+    padding: 60px 0;
+  }
+}
+
+// Large screen
+@media (min-width: 56rem) {
+  section {
+    padding: 60px 0;
   }
 }

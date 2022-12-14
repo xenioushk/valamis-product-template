@@ -1,47 +1,31 @@
 .product-card {
   position: relative;
   display: flex;
-  flex-basis: 30%;
   flex-direction: column;
   justify-content: center;
   color: $dark-text-color;
-  padding-top: 120px;
-  margin-bottom: 100px;
+  padding-top: 0;
+  margin-bottom: 24px;
+  height: auto;
 
   &__featured_image {
-    top: 0;
-    left: 15%;
-    position: absolute;
-    width: 70%;
-    margin-top: -5%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    margin-top: 0%;
     @include round(8px);
   }
 
   &__info {
+    padding: 1.5rem 18px 1rem 18px;
     border: 2px solid transparent;
     background-color: darken($light-bg, 3%);
     @include round(8px);
-    padding: 3.5rem 18px 1rem 18px;
     flex-direction: column;
-    // border-width: 2px;
-    // border-style: solid;
-    // border-image: linear-gradient(to top, red, rgba(0, 0, 0, 0)) 1 100%;
-    // @include drop-shadow(0, 3px, 0px, 1px, rgba(0, 0, 0, 0.6));
-
-    // border-inline-start: 2px solid;
-    // border-block-start: 2px solid;
-    // border-image-slice: 1;
-    // border-image-source: radial-gradient(circle at right, lightblue, transparent 100%);
-
-    // border: double 3px transparent;
-    // border-radius: 80px;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top, lightblue, pink 70%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
 
     &:hover {
-      // border-image: linear-gradient(to top, blue, rgba(0, 0, 0, 0)) 1 100%;
-
       .btn--product-card {
         display: block;
       }
@@ -135,10 +119,50 @@
 }
 
 .products {
-  &__load_more_container {
+  &__show_more_container {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
+  }
+}
+
+// Responsive
+
+@media (min-width: 40rem) {
+  .product-card {
+    padding-top: 120px;
+    margin-bottom: 100px;
+    &__featured_image {
+      position: relative;
+      width: 60%;
+      top: 0%;
+      left: 0%;
+      margin-top: -55%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+}
+
+// Large screen
+@media (min-width: 56rem) {
+  .product-card {
+    padding-top: 120px;
+    margin-bottom: 100px;
+
+    &__featured_image {
+      position: relative;
+      width: 80%;
+      top: 0%;
+      left: 0%;
+      margin-top: -95%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    &__info {
+      padding: 3.5rem 18px 1rem 18px;
+    }
   }
 }
